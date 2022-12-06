@@ -70,4 +70,6 @@ $border-radius-pill: 55rem;
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $font-sizes: map-merge($font-size, $custom-font-size);
+
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
