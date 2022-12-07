@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary border-bottom bg-gradient border-1 py-3 ps-2"
+      class="container-fluid navbar fixed-top navbar-expand-lg navbar-dark bg-primary border-bottom bg-gradient border-1 py-3 ps-2"
     >
       <a class="navbar-brand text-light pl-3 py-3 ms-3 fw-bold" href="#"
         >Event Source</a
@@ -29,9 +29,12 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse justify-content-md-center row"
+        id="navbarSupportedContent"
+      >
         <ul
-          class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll d-flex justify-content-center"
+          class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll justify-content-center"
         >
           <li class="nav-item">
             <a class="nav-link active text-light" aria-current="page" href="#"
@@ -48,213 +51,302 @@
             <a class="nav-link active" href="#">Events</a>
           </li>
         </ul>
-        <form class="d-flex round" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <!-- <button class="btn btn-outline-dark d-inline-flex ps-3" type="submit">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="21"
-              fill="currentColor"
-              class="bi bi-person-fill"
-              viewBox="0 0 16 16"
+        <div class="container-fluid">
+          <form class="d-flex round" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-dark d-inline-flex ps-3"
+              type="submit"
             >
-              <path
-                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-              /></svg>Profile
-          </button> -->
-        </form>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                fill="currentColor"
+                class="bi bi-person-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                /></svg
+              >Profile
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
     <div class="container-fluid bg-primary text-light py-3 my-5">
-      <div class="container-xl ms-3">
-        <div class="row align-item-center">
+      <div class="container-xl ">
+        <div class="row vh-50 justify-content-md-center d-flex py-5">
           <div class="col-md-6 my-5 py-4">
-            <h1 class="fw-bold text-capitalize px-5 align-middle text-wrap lh1">
+            <h1 class="fw-bold text-capitalize px-5 lh1">
               All your favorite events in One place
             </h1>
           </div>
-          <div class="col-md-6 py-4">
+          <div class="col-md-6">
             <img
-              src="images/Frame.svg"
-              class="img-fluid"
-              alt="woman using a dj machine"
-            />
+                src="images/Frame.svg"
+                class="img-fluid"
+                alt="woman using a dj machine"
+              />
           </div>
         </div>
       </div>
     </div>
-    <div class="container-lg py-2">
-      <h4 class="text-capitalize">Rugby Events</h4>
-      <div class="my-3 row justify-md-content-center">
-        <div class="col-md-4 py-2 my-3">
-          <div>
-            <img
-              src="/images/Image and Heading.png"
-              class="img-fluid"
-              href="#"
-            />
-          </div>
-          <div class="justify-content-start">
-            <h6>Leinster vs Munster</h6>
-            <p>Thomond Park <span class="text-dark">11/03/2022 19:30</span></p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="col-md-4 py-2 my-3">
-          <img src="/images/Image and Heading.png" class="img-fluid" href="#" />
-          <div class="justify-content-start">
-            <h6>Leinster vs Munster</h6>
-            <p>Thomond Park <span class="text-dark">11/03/2022 19:30</span></p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="col-md-4 py-2 my-3">
-          <img src="/images/Image and Heading.png" class="img-fluid" href="#" />
-          <div class="justify-content-start">
-            <h6>Leinster vs Munster</h6>
-            <p>Thomond Park <span class="text-dark">11/03/2022 19:30</span></p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-lg py-2">
-      <h4 class="text-capitalize">Music Events</h4>
-      <div class="my-3 row justify-content-center">
-        <div class="col-md-4 py-2 my-3">
-          <div class="">
-            <img src="/images/Music.png" class="img-fluid" alt="" />
-            <h6 class="text-capitalize py-2">Dermot Kennedy</h6>
-            <p>Croke Park <span class="text-dark">11/03/2023 20:30</span></p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="col-md-4 py-2 my-3">
-          <div class="">
-            <img src="/images/Music.png" class="img-fluid" alt="" />
-            <h6 class="py-2">Clean Bandit</h6>
-            <p>Marlay Park<span class="text-dark"> 19/06/22 14:30</span></p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-
-        <div class="col-md-4 py-2 my-3">
-          <div class="">
-            <img src="/images/Music.png" class="img-fluid" alt="" />
-            <h6 class="py-2">Mumford And Sons</h6>
-            <p>The Academy <span class="text-dark">13/10/2023 21:30</span></p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-lg py-2">
-      <h4>Hurling Events</h4>
-      <div class="my-3 row justify-content-md-center">
-        <div class="col-md-4 py-2 my-3">
-          <div class="">
-            <img src="/images/Hurling.png" class="img-fluid" alt="" />
-            <h4 class="py-2">Dublin vs Kerry</h4>
-            <p>
-              <span class="text-dark"> Croke Park 03/04/2023 13:10</span>
-            </p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="col-md-4 py-2 my-3">
-          <div class="">
-            <img src="/images/Hurling.png" class="img-fluid" alt="" />
-            <h4 class="py-2">Dublin vs Kerry</h4>
-            <p>
-              <span class="text-dark"> Croke Park 03/04/2023 13:10</span>
-            </p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-        <div class="col-md-4 py-2 my-3">
-          <div class="">
-            <img src="/images/Hurling.png" class="img-fluid" alt="" />
-            <h4 class="py-2">Dublin vs Kerry</h4>
-            <p>
-              <span class="text-dark"> Croke Park 03/04/2023 13:10</span>
-            </p>
-          </div>
-          <div class="align-items-end">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-lg py-2">
+    <div class="container-xxl py-2">
       <h4>Music Events</h4>
+      <div class="my-3 row justify-content-md-center px-2">
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/Dermot Kennedy.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dermot Kennedy</h5>
+              <p class="card-text">
+                3Arena <span class="text-dark">July 16 12:30</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/Adele.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Adele</h5>
+              <p class="card-text">
+                Croke Park <span class="text-dark"> April 16 18:30</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/Kings of Leon.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kings of Leon</h5>
+              <p class="card-text">
+                Electric Picnic <span class="text-dark">September 9 19:00</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-xxl py-2">
+      <h4>Rugby Events</h4>
+      <div class="my-3 row justify-content-md-center px-2">
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/Rugby-2.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Leinster vs Munster</h5>
+              <p class="card-text">
+                Thomond Park <span class="text-dark">July 16 16:30</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/Rugby-2.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ulster vs Munster</h5>
+              <p class="card-text">
+                Kingspan Stadium <span class="text-dark"> April 16 18:30</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/Rugby-2.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Osprey vs Bath</h5>
+              <p class="card-text">
+                Premier <span class="text-dark">September 9 19:00</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl py-2">
+      <h4>Football Events</h4>
+      <div class="my-3 row justify-content-md-center px-2">
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/premier league.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Manchester City vs Stoke City</h5>
+              <p class="card-text">
+                Ethiad Stadium <span class="text-dark">July 16 16:30</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/premier league.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chelsea vs Fulham</h5>
+              <p class="card-text">
+                Stamford Stadim<span class="text-dark"> April 16 18:30</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 py-2 my-3">
+          <div class="card">
+            <img
+              src="/images/premier league.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tottenham Spurs vs Leeds United</h5>
+              <p class="card-text">
+                Premier Stadium <span class="text-dark">September 9 19:00</span>
+              </p>
+            </div>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg py-2">
+      <h4>GAA Events</h4>
       <div class="my-3 row justify-content-md-center">
         <div class="col-md-4 py-2 my-3">
-          <div class="card text-bg-dark">
-            <img src="/images/image 26.png" class="card-img" alt="..." />
+          <div class="card">
             <div class="card-img-overlay">
-              <h5 class="card-title">Hurling</h5>
-              <p>
-                Croke Park
+              <img
+                src="/images/hurling (1).png"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <h4 class="card-title">Kerry vs Limerick</h4>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
               </p>
             </div>
-            
-          </div>
-            <div class="align-items-end py-2">
+            <div class="align-items-end py-2 ps-2">
               <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 py-2 my-3">
-          <div class="card text-bg-dark">
-            <img src="/images/image 26.png" class="card-img" alt="..." />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Hurling</h5>
-              <p>
-                Croke Park
+          <div class="card">
+            <img
+              src="/images/hurling (1).png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dublin vs Kerry</h5>
+              <p class="card-text">
+                Premier Stadium <span class="text-dark">September 9 19:00</span>
               </p>
             </div>
-            
-          </div>
-          <div class="align-items-end py-2">
+            <div class="align-items-end py-2 ps-2">
               <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 py-2 my-3">
-          <div class="card text-bg-dark">
-            <img src="/images/image 26.png" class="card-img" alt="..." />
-            <div class="card-img-overlay">
-              <h5 class="card-title">Hurling</h5>
-              <p>
-                Croke Park
+          <div class="card">
+            <img
+              src="/images/hurling (1).png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dublin vs Kerry</h5>
+              <p class="card-text">
+                Premier Stadium <span class="text-dark">September 9 19:00</span>
               </p>
             </div>
-            
-          </div>
-          <div class="align-items-end py-2">
-            <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            <div class="align-items-end py-2 ps-2">
+              <a href="" class="btn btn-primary" role="button">Buy Tickets</a>
+            </div>
           </div>
         </div>
+      </div>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
